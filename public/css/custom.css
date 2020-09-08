@@ -1,0 +1,119 @@
+body {
+        font-size: 1.4rem;
+    }
+    a{
+        color: #4a4a4a;
+    }
+    a:hover{
+        color: var(--p-text,#212b36);
+        text-decoration: none;
+    }
+    .firstsection{
+        margin: 30px 0px;  
+        text-align: center;
+    }
+    .firstheading{
+        margin: 10px 0px; 
+    }
+    .addwidget{
+        margin-top: 10px; 
+        cursor: pointer;
+        background: #e0233c;
+        border: 1px solid #e5e5e5;
+        color: #fff;
+    }
+    .addwidget:hover {
+    background: #e0233c;
+    border-color: #c4cdd5;
+    color: var(--p-text,#212b36);
+    text-decoration: none;
+    }
+    .addwidget:focus {
+        border-color: #e0233c;
+        outline: 0;
+        box-shadow: 0 0 0 1px #e0233c;
+    }
+    .addwidget:active {
+        background: #e0233c;
+        border-color: #e0233c;
+    }
+    .Polaris-Label__Text {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    .customfields{
+        display: none;
+    }
+    .Polaris-RadioButton:not(.Polaris-RadioButton--newDesignLanguage) .Polaris-RadioButton__Input:focus + .Polaris-RadioButton__Backdrop, .Polaris-RadioButton:not(.Polaris-RadioButton--newDesignLanguage) .Polaris-RadioButton__Input:active + .Polaris-RadioButton__Backdrop, .Polaris-RadioButton:not(.Polaris-RadioButton--newDesignLanguage) .Polaris-RadioButton__Input:checked + .Polaris-RadioButton__Backdrop {
+            background: #e0233c;
+        }
+        .Polaris-RadioButton:not(.Polaris-RadioButton--newDesignLanguage) .Polaris-RadioButton__Input:active + .Polaris-RadioButton__Backdrop{
+            box-shadow: 0 0 0 1px #e0233c, 0 0 0 0 transparent;
+        }
+    .Polaris-RadioButton:not(.Polaris-RadioButton--newDesignLanguage) .Polaris-RadioButton__Icon{
+        background: #e0233c;
+    }
+    .icons_div{
+        text-align: right;
+    }
+    .icons_div .delet_button{
+        font-size: 2.2rem;
+        cursor: pointer;
+    }
+    .delet_button:hover{
+        color: #df173f;
+    }
+    .title:hover{
+        color: #df173f;
+    }
+    .Polaris-ResourceList__SpinnerContainer{
+        padding-top: 13%;
+    }
+    #load {
+    background: url('/artplacer/public/images/Preloader.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+} 
+.Cancle:focus {
+    border-color: #f1f1f108;
+    outline: 0;
+    box-shadow: 0 0 0 1px #dedee0;
+}
+.Polaris-ResourceList__LoadingOverlay{
+    z-index: 9999;
+}
+.Polaris-ResourceList__SpinnerContainer {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+.arttextstyle{
+    line-height: 2.8;
+    }
+.artwok-stack{
+    margin-top: -2.6rem;
+}
+.Polaris-Link_yj5sy {
+    cursor: default !important;
+}
+.Polaris-ResourceItem  {
+    cursor: default !important;
+}
+.Polaris-TextStyle--variationStrong{
+    cursor: pointer;
+}
+.zmdi-puzzle-piece {
+    font-size: 3rem !important;
+    /*color: #df163f !important;*/
+}
