@@ -45,10 +45,6 @@ class HomeController extends Controller
         $widget = new Widget();
         $widget->user_id = $shop->id;
         $widget->room = $request->get('room');
-       // $widget->txt_color = $request->get('txt_color');
-       // $widget->bg_color = $request->get('bg_color');
-       // $widget->layout = $request->get('layout');
-       // $widget->border_color = $request->get('border_color');
         $widget->position = $request->get('position');
         $widget->text = $request->get('text');
         $widget->html_code =$request->get('html_code');
@@ -58,7 +54,6 @@ class HomeController extends Controller
         $url = env('APP_URL');
         logger($url);
         $url = 'https://netzilatechnologies.com/artplacer/public';
-        //return redirect()->route('home');
         return response()->json($url);
     }
 
@@ -72,7 +67,6 @@ class HomeController extends Controller
     {
         $shop = Auth::user();
         $widget = Widget::where('id', $id)->first();
-        //$url = env('APP_URL');
         $url = 'https://netzilatechnologies.com/artplacer/public';
         return response()->json(['widget'=>$widget, 'url' =>$url]);
     }
@@ -103,10 +97,6 @@ class HomeController extends Controller
         $this->deleteCode($shop,$widget);
         //Update Code
         $widget->room = $request->get('room');
-       // $widget->txt_color = $request->get('txt_color');
-       // $widget->bg_color = $request->get('bg_color');
-      //  $widget->border_color = $request->get('border_color');
-       // $widget->layout = $request->get('layout');
         $widget->position = $request->get('position');
         $widget->text = $request->get('text');
         $widget->html_code =$request->get('html_code');
